@@ -81,3 +81,17 @@ footer {
 .btn:hover {
     background-color: #0056b3;
 }
+.modal-body {
+    background-color: #f8f9fa; 
+}
+
+.btn-primary {
+    background-color: #28a745; 
+    border-color: #28a745;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

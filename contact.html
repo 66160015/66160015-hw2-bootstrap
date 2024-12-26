@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ติดต่อเรา</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header role="banner">
@@ -20,47 +20,127 @@
     <main role="main">
       <section>
         <h2>ติดต่อเรา</h2>
-        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="contactModalLabel">ฟอร์มติดต่อ</h5>
-                    </div>
-                    <div class="modal-body">
-                        <form action="/submit" method="POST" role="form" aria-label="แบบฟอร์มติดต่อ">
-                            <div class="form-group">
-                                <label for="fullname">ชื่อ-นามสกุล *</label>
-                                <input type="text" class="form-control" id="fullname" name="fullname" required aria-required="true" minlength="2" maxlength="100" aria-describedby="fullname-help">
-                                <small id="fullname-help" class="form-text text-muted">กรุณากรอกชื่อและนามสกุลจริง</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">อีเมล *</label>
-                                <input type="email" class="form-control" id="email" name="email" required aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="email-help">
-                                <small id="email-help" class="form-text text-muted">ตัวอย่าง: example@domain.com</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="tel">เบอร์โทรศัพท์</label>
-                                <input type="tel" class="form-control" id="tel" name="tel">
-                                <small id="tel-help" class="form-text text-muted">กรอกหมายเลข 10 หลัก ไม่ต้องมีขีด เช่น 0812345678</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">ข้อความ *</label>
-                                <textarea class="form-control" id="message" name="message" required aria-required="true" minlength="10" rows="5" aria-describedby="message-help"></textarea>
-                                <small id="message-help" class="form-text text-muted">กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร</small>
-                            </div>
-                            <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
-                        </form>
-                    </div>
-                </div>
+        <div
+          class="modal fade"
+          id="contactModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="contactModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">ฟอร์มติดต่อ</h5>
+              </div>
+              <div class="modal-body">
+                <form
+                  action="/submit"
+                  method="POST"
+                  role="form"
+                  aria-label="แบบฟอร์มติดต่อ"
+                >
+                  <div class="form-group">
+                    <label for="fullname">ชื่อ-นามสกุล *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fullname"
+                      name="fullname"
+                      required
+                      aria-required="true"
+                      minlength="2"
+                      maxlength="100"
+                      aria-describedby="fullname-help"
+                    />
+                    <small id="fullname-help" class="form-text text-muted"
+                      >กรุณากรอกชื่อและนามสกุลจริง</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="email">อีเมล *</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      required
+                      aria-required="true"
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      aria-describedby="email-help"
+                    />
+                    <small id="email-help" class="form-text text-muted"
+                      >ตัวอย่าง: example@domain.com</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="tel">เบอร์โทรศัพท์</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="tel"
+                      name="tel"
+                    />
+                    <small id="tel-help" class="form-text text-muted"
+                      >กรอกหมายเลข 10 หลัก ไม่ต้องมีขีด เช่น 0812345678</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="message">ข้อความ *</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      required
+                      aria-required="true"
+                      minlength="10"
+                      rows="5"
+                      aria-describedby="message-help"
+                    ></textarea>
+                    <small id="message-help" class="form-text text-muted"
+                      >กรุณากรอกข้อความอย่างน้อย 10 ตัวอักษร</small
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    ส่งข้อความ
+                  </button>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
-    <footer role="contentinfo">
-      <h2>ช่องทางการติดต่อ</h2>
-      <p>EMAIL : 66160015@buu.ac.th</p>
-      <p>&copy; นายสวิตต์ บูระพันธ์. สงวนลิขสิทธิ์.</p>
-    </footer>
+    <footer role="contentinfo" class="bg-dark text-white mt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <h5>ข้อมูลติดต่อ</h5>
+                  <p>EMAIL: 66160015@buu.ac.th</p>
+                  <p>โทรศัพท์: 093-834-4483</p>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <h5>ติดตามเรา</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="https://www.facebook.com" class="text-white">Facebook</a></li>
+                      <li><a href="https://www.twitter.com" class="text-white">Twitter</a></li>
+                      <li><a href="https://www.instagram.com" class="text-white">Instagram</a></li>
+                  </ul>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                  <h5>เมนูที่สำคัญ</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="index.html" class="text-white">หน้าหลัก</a></li>
+                      <li><a href="detail.html" class="text-white">เกี่ยวกับ</a></li>
+                      <li><a href="contact.html" class="text-white">ติดต่อเรา</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="text-center mt-4">
+              <p>&copy; นายสวิตต์ บูระพันธ์. สงวนลิขสิทธิ์.</p>
+          </div>
+      </div>
+  </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
