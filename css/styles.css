@@ -8,24 +8,14 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e0f7fa; /* เปลี่ยนพื้นหลังเป็นสีฟ้าอ่อน */
+    color: #003366; /* เปลี่ยนสีข้อความเป็นสีน้ำเงินเข้ม */
 }
 
 header {
-    background-color: #333;
+    background-color: #007BFF; /* เปลี่ยนสีพื้นหลังของ header เป็นสีน้ำเงิน */
     color: white;
     padding: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav ul li {
-    margin-right: 1rem;
 }
 
 nav a {
@@ -65,12 +55,12 @@ aside {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #007BFF; /* เปลี่ยนสีพื้นหลังของ footer เป็นสีน้ำเงิน */
     color: white;
 }
 
 .btn {
-    background-color: #007BFF;
+    background-color: #007BFF; /* ปรับสีปุ่มเป็นสีน้ำเงิน */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -79,19 +69,14 @@ footer {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* สีเมื่อ hover เป็นสีน้ำเงินเข้ม */
 }
+
 .modal-body {
     background-color: #f8f9fa; 
 }
 
 .btn-primary {
-    background-color: #28a745; 
+    background-color: #28a745; /* ปรับสีปุ่ม primary เป็นสีเขียว */
     border-color: #28a745;
-}
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
 }
